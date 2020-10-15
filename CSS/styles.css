@@ -1,0 +1,179 @@
+/*
+#FF6700 - Orange
+#49C6E5 - Sky Blue
+#97DB4F - Lime Green
+#1B2845 - Navy Blue
+#F7F0F5 - Plat
+*/
+
+/* Global Styles
+---------------------------------*/
+html {
+    box-sizing: border-box;
+}
+  
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/*box model fix ^^^ */
+  
+body {
+  color: black;
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+  
+.content-wrap {
+  margin: 0 auto;
+  width: 80%;
+  padding: 60px 0;
+}
+h1, h2, h3, h4 {
+  font-family: 'Roboto Mono', monospace;
+}
+a, p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Navigation Bar
+---------------------------------*/
+.navbar {
+  background-color: black;
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 10000;
+}
+.navbar .homepage {
+  float: left;
+  color: #F7F0F5;
+  margin-left: 5%;
+  text-align: center;
+  padding: 1%;
+  text-decoration: none;
+}
+.navbar .pages {
+  float: right;
+  color: #F7F0F5;
+  margin-right: 5%;
+  text-align: center;
+  padding: 1%;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background-color: #FF6700;
+  color: #F7F0F5;
+}
+.topnav a.active {
+  background-color: #FF6700;
+  color: #F7F0F5;
+}
+
+/* Home-Page
+---------------------------------*/
+.box {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 1%;
+}
+.box .title {
+  position: absolute;
+  z-index: 999;
+  margin: 0 30% 0 10%;
+  left: 0;
+  right: 0;
+  top: 20%;
+  bottom: 10px;
+  text-align: left;
+  color: #EBEBEB;
+  font-size: 64px;
+}
+.box .text {
+  position: absolute;
+  z-index: 999;
+  margin: 0 30% 0 10%;
+  left: 0;
+  right: 0;
+  top: 50%;
+  text-align: left;
+  color: #EBEBEB;
+}
+
+/* About Section
+---------------------------------*/
+.statementbox {
+  margin: 0 auto;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  background-color: #F3A712;
+  color: #772E25;
+  text-align: center;
+}
+h4 {
+  padding: 0 20% 0% 20%;
+  font-size: 15px;
+}
+.aboutbox {
+  margin-top: 0px;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  background-color: beige;
+  color: #29335C;
+}
+.textbox {
+  padding: 1.5% 2%;
+  border: 2px solid black;
+  border-radius: 20px;
+  margin: 2% 10%;
+  font-size: 1.25em;
+  background-color: #59C3C3;
+  color: black;
+}
+.aboutbox h1 {
+  padding: 0 10% 0 10%;
+}
+.aboutbox .text {
+  padding: 0 10% 0 10%;
+  font-size: 1.25em;
+}
+.aboutbox img {
+  float: left;
+  margin-right: 20px;
+  margin-top: auto;
+  padding-left: 0px;
+  border-radius: 10px;
+}
+.aboutbox .col1 {
+  width: 30%;
+}
+/* Footer Section
+---------------------------------*/
+footer {
+  background: #343434;
+  color: #f7fff7;
+}
+.contactbox {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: medium;
+  justify-content: left;
+  margin-top: 2%;
+}
+footer img {
+  float: left;
+  margin: 2% 5% 2% 30%;
+}
+.copyright {
+  text-align: center;
+  font-size: x-small;
+  padding-bottom: 2%;
+  margin-bottom: 0;
+}

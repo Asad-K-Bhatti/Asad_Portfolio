@@ -2,27 +2,43 @@
 <html lan="en-GB" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title>Asad's Porfolio</title>
+        <title>Asad's Portfolio</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="A website consisting of all my previous projects, skills and work experience.">
+        <link href="CSS/styles.css" rel="stylesheet">
     </head>
     <body>
         <!-- Navigation Bar -->
-        <nav>
-            <ul>
-                <li><a href="#home">Asad's Portfolio</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <!-- Header -->
-        <header>
-                <h1 id="home">Welcome to My Portfolio!</h1>
-                <img src="Pictures/Main_Page/Lexus_LFA.jpg" alt="An Orange 2012 Lexus LFA Nurburgring Edition"
-                    width="1500" height="800">
+        <header class="navbar">
+            <a href="#home" class="homepage"><b>Asad's Portfolio</b></a>
+            <a href="#about" class="pages"><b>About</b></a>
+            <a href="#projects" class="pages"><b>Projects</b></a>
+            <a href="#gallery" class="pages"><b>Gallery</b></a>
+            <a href="contact" class="pages"><b>Contact</b></a>
         </header>
+        
+        <!-- Home Page -->
+        <div id="home" class="box">
+            <picture>
+                <source media="(min-width:600px)"
+                        srcset="Media/Main-Page/Lexus-LFA-320.jpg 320w,
+                                Media/Main-Page/Lexus-LFA-480.jpg 480w,
+                                Media/Main-Page/Lexus-LFA-720.jpg 720w,
+                                Media/Main-Page/Lexus-LFA-960.jpg 960w,
+                                Media/Main-Page/Lexus-LFA-1440.jpg 1440w,
+                                Media/Main-Page/Lexus-LFA-1920.jpg 1920w">
+                                <!-- For computer displays -->
+                <source srcset="Media/Main-Page/Lexus-LFA-cropped-320.jpg 320w,
+                                Media/Main-Page/Lexus-LFA-cropped-480.jpg 480w,
+                                Media/Main-Page/Lexus-LFA-cropped-720.jpg 720w,
+                                Media/Main-Page/Lexus-LFA-cropped-960.jpg 960w">
+                                <!-- for mobile devices -->
+                <img src="Media/Main-Page/Lexus-LFA-1920.jpg" alt="orange Lexus LFA speeding down the track"
+                width="100%">
+            </picture>
+            <h1 class="title">Welcome to Asad's Portfolio!</h1>
+            <h1 class="text">(Brand Statement)</h1>
+        </div>
 
         <!-- About -->
         <div id="about">
