@@ -1,5 +1,5 @@
 /*
-#FF6700 - Orange
+#ff8800 - Orange
 #49C6E5 - Sky Blue
 #97DB4F - Lime Green
 #1B2845 - Navy Blue
@@ -46,29 +46,37 @@ a, p {
   top: 0px;
   width: 100%;
   z-index: 10000;
+  font-size: 150%;
 }
 .navbar .homepage {
   float: left;
   color: #F7F0F5;
-  margin-left: 5%;
+  margin-left: 10%;
   text-align: center;
-  padding: 1%;
+  padding: 2%;
   text-decoration: none;
 }
 .navbar .pages {
   float: right;
   color: #F7F0F5;
-  margin-right: 5%;
   text-align: center;
-  padding: 1%;
+  padding: 2%;
+  text-decoration: none;
+}
+.navbar .pageend {
+  float: right;
+  color: #F7F0F5;
+  margin-right: 10%;
+  text-align: center;
+  padding: 2%;
   text-decoration: none;
 }
 .navbar a:hover {
-  background-color: #FF6700;
+  background-color: #ff8800;
   color: #F7F0F5;
 }
 .topnav a.active {
-  background-color: #FF6700;
+  background-color: #ff8800;
   color: #F7F0F5;
 }
 
@@ -88,10 +96,10 @@ a, p {
   left: 0;
   right: 0;
   top: 20%;
-  bottom: 10px;
+  bottom: 1%;
   text-align: left;
   color: #EBEBEB;
-  font-size: 64px;
+  font-size: 400%;
 }
 .box .text {
   position: absolute;
@@ -106,74 +114,98 @@ a, p {
 
 /* About Section
 ---------------------------------*/
-.statementbox {
-  margin: 0 auto;
-  position: relative;
-  display: inline-block;
-  width: 100%;
-  background-color: #F3A712;
-  color: #772E25;
-  text-align: center;
-}
-h4 {
-  padding: 0 20% 0% 20%;
-  font-size: 15px;
-}
 .aboutbox {
-  margin-top: 0px;
+  background-color: white;
   position: relative;
   display: inline-block;
   width: 100%;
-  background-color: beige;
-  color: #29335C;
+  margin-bottom: 2%;
 }
-.textbox {
-  padding: 1.5% 2%;
-  border: 2px solid black;
-  border-radius: 20px;
-  margin: 2% 10%;
-  font-size: 1.25em;
-  background-color: #59C3C3;
+.aboutbox h2 {
+  position: relative;
+  margin-left: 10%;
+  font-size: 300%;
+  text-decoration-line: underline;
+  text-decoration-color:  #97DB4F;
+}
+.aboutbox p {
+  position: relative;
+  margin: 0 10% 1% 10%;
+  font-size: 150%;
+}
+
+/* Highlights Section
+---------------------------------*/
+.highlightbox {
+  background-color: #ff8800;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding-bottom: 3%;
+  margin-bottom: -1%;
+}
+.highlightbox h2 {
+  position: relative;
+  margin-left: 10%;
+  font-size: 300%;
+  text-decoration-line: underline;
+  text-decoration-color:  #97DB4F;
+}
+.highlightbox table {
+  width: 80%;
+  margin-left: 10%;
+  text-align: center;
+  padding 2%;
+}
+.highlightbox img {
+  border-radius: 5%;
+}
+.highlightbox a {
+  float: center;
+  color: #F7F0F5;
+  text-align: center;
+  padding: 3%;
+  text-decoration: none;
+  background-color: black;
+  border-radius: 10%;
+}
+.highlightbox a:hover {
+  background-color: #F7F0F5;
   color: black;
 }
-.aboutbox h1 {
-  padding: 0 10% 0 10%;
-}
-.aboutbox .text {
-  padding: 0 10% 0 10%;
-  font-size: 1.25em;
-}
-.aboutbox img {
-  float: left;
-  margin-right: 20px;
-  margin-top: auto;
-  padding-left: 0px;
-  border-radius: 10px;
-}
-.aboutbox .col1 {
-  width: 30%;
-}
+
 /* Footer Section
 ---------------------------------*/
 footer {
   background: #343434;
   color: #f7fff7;
+  margin-top: -1%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
-.contactbox {
+footer h2 {
   position: relative;
-  display: inline-block;
-  width: 100%;
-  font-size: medium;
-  justify-content: left;
-  margin-top: 2%;
+  margin-left: 10%;
+  font-size: 300%;
+  text-decoration-line: underline;
+  text-decoration-color:  #97DB4F;
 }
-footer img {
-  float: left;
-  margin: 2% 5% 2% 30%;
-}
-.copyright {
+footer table {
+  width: 80%;
+  margin-left: 10%;
   text-align: center;
-  font-size: x-small;
-  padding-bottom: 2%;
-  margin-bottom: 0;
+  padding 2%;
+}
+footer a {
+  float: center;
+  color: #F7F0F5;
+  text-align: center;
+  padding: 3% 20%;
+  text-decoration: none;
+  background-color: black;
+  border-radius: 10%;
+}
+footer a:hover {
+  background-color: #ff8800;
+  color: #F7F0F5;
 }
