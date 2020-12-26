@@ -79,7 +79,16 @@ a, p {
   background-color: #ff8800;
   color: #F7F0F5;
 }
-
+@media (min-width: 415px) and (max-width: 810px){
+  .navbar {
+    font-size: 75%;
+  }
+}
+@media (max-width: 415px){
+  .navbar {
+    font-size: 57%;
+  }
+}
 /* Home-Page
 ---------------------------------*/
 .box {
@@ -111,7 +120,27 @@ a, p {
   text-align: left;
   color: #EBEBEB;
 }
-
+@media (min-width: 700px) and (max-width: 945px){
+  .box .title {
+    font-size: 300%;
+  }
+}
+@media (min-width: 375px) and (max-width: 700px){
+  .box .title {
+    font-size: 200%;
+  }
+  .box .text{
+    font-size: 150%;
+  }
+}
+@media (max-width: 375px){
+  .box .title {
+    font-size: 157%;
+  }
+  .box .text{
+    font-size: 137%;
+  }
+}
 /* About Section
 ---------------------------------*/
 .aboutbox {
@@ -119,7 +148,7 @@ a, p {
   position: relative;
   display: inline-block;
   width: 100%;
-  margin-bottom: 2%;
+  margin-bottom: 10%;
 }
 .aboutbox h2 {
   position: relative;
@@ -133,7 +162,22 @@ a, p {
   margin: 0 10% 1% 10%;
   font-size: 150%;
 }
-
+@media (min-width: 375px) and (max-width: 700px){
+  .aboutbox h2 {
+    font-size: 200%;
+  }
+  .aboutbox p{
+    font-size: 125%;
+  }
+}
+@media (max-width: 375px){
+  .aboutbox h2 {
+    font-size: 157%;
+  }
+  .aboutbox p{
+    font-size: 100%;
+  }
+}
 /* Highlights Section
 ---------------------------------*/
 .highlightbox {
@@ -155,7 +199,7 @@ a, p {
   width: 80%;
   margin-left: 10%;
   text-align: center;
-  padding 2%;
+  padding: 2%;
 }
 .highlightbox img {
   border-radius: 5%;
@@ -173,7 +217,16 @@ a, p {
   background-color: #F7F0F5;
   color: black;
 }
-
+@media (min-width: 375px) and (max-width: 700px){
+  .highlightbox h2 {
+    font-size: 200%;
+  }
+}
+@media (max-width: 375px){
+  .highlightbox h2 {
+    font-size: 157%;
+  }
+}
 /* Footer Section
 ---------------------------------*/
 footer {
@@ -194,7 +247,7 @@ footer table {
   width: 80%;
   margin-left: 10%;
   text-align: center;
-  padding 2%;
+  padding: 2%;
 }
 footer a {
   float: center;
