@@ -70,6 +70,7 @@ a, p {
   text-align: center;
   padding: 2%;
   text-decoration: none;
+  background-color: #58aa00;
 }
 .navbar a:hover {
   background-color: #ff8800;
