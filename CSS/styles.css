@@ -202,8 +202,13 @@ a, p {
   text-align: center;
   padding: 2%;
 }
+.highlightbox td, .highlightbox tr {
+  padding: 2%;
+}
 .highlightbox img {
-  border-radius: 5%;
+  border-radius: 40%;
+  width: 100%;
+  height: auto;
 }
 .highlightbox a {
   float: center;
@@ -213,6 +218,7 @@ a, p {
   text-decoration: none;
   background-color: black;
   border-radius: 10%;
+  font-size: 150%;
 }
 .highlightbox a:hover {
   background-color: #F7F0F5;
@@ -222,10 +228,16 @@ a, p {
   .highlightbox h2 {
     font-size: 200%;
   }
+  .highlightbox a{
+    font-size: 100%;
+  }
 }
 @media (max-width: 375px){
   .highlightbox h2 {
     font-size: 157%;
+  }
+  .highlightbox a{
+    font-size: 75%;
   }
 }
 /* Footer Section
@@ -258,8 +270,25 @@ footer a {
   text-decoration: none;
   background-color: black;
   border-radius: 10%;
+  font-size: 150%;
 }
 footer a:hover {
   background-color: #ff8800;
   color: #F7F0F5;
+}
+@media (min-width: 375px) and (max-width: 700px){
+  footer h2 {
+    font-size: 200%;
+  }
+  footer a{
+    font-size: 100%;
+  }
+}
+@media (max-width: 375px){
+  footer h2 {
+    font-size: 157%;
+  }
+  footer a{
+    font-size: 75%;
+  }
 }
