@@ -110,6 +110,7 @@ a, p {
   text-align: left;
   color: #EBEBEB;
   font-size: 400%;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 .box .text {
   position: absolute;
@@ -120,6 +121,7 @@ a, p {
   top: 50%;
   text-align: left;
   color: #EBEBEB;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
 @media (min-width: 700px) and (max-width: 945px){
   .box .title {
