@@ -97,7 +97,7 @@ a, p {
   display: inline-block;
   width: 100%;
   margin-bottom: 0;
-  margin-top: 1%;
+  margin-top: 5%;
 }
 .box .title {
   position: absolute;
@@ -163,6 +163,14 @@ a, p {
   margin: 0 10% 1% 10%;
   font-size: 150%;
 }
+.aboutbox .screens{
+  text-align: center;
+}
+.aboutbox img {
+  border-radius: 5%;
+  width: 40%;
+  height: auto;
+}
 @media (min-width: 375px) and (max-width: 700px){
   .aboutbox h2 {
     font-size: 200%;
@@ -210,6 +218,16 @@ a, p {
   width: 100%;
   height: auto;
 }
+.highlightbox h3{
+  text-align: center;
+  padding-bottom: 2%;
+  font-size: 200%;
+}
+.highlightbox .description{
+  text-align: center;
+  padding-bottom: 4%;
+  font-size: 150%;
+}
 .highlightbox a {
   float: center;
   color: #F7F0F5;
@@ -231,12 +249,24 @@ a, p {
   .highlightbox a{
     font-size: 100%;
   }
+  .highlightbox h3{
+    font-size: 157%;
+  }
+  .highlightbox .description{
+    font-size: 100%;
+  }
 }
 @media (max-width: 375px){
   .highlightbox h2 {
     font-size: 157%;
   }
   .highlightbox a{
+    font-size: 75%;
+  }
+  .highlightbox h3{
+    font-size: 100%;
+  }
+  .highlightbox .description{
     font-size: 75%;
   }
 }
@@ -255,6 +285,11 @@ footer h2 {
   font-size: 300%;
   text-decoration-line: underline;
   text-decoration-color:  #97DB4F;
+}
+footer p{
+  position: relative;
+  margin: 0 10% 1% 10%;
+  font-size: 150%;
 }
 footer table {
   width: 80%;
