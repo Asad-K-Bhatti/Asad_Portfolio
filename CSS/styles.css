@@ -112,6 +112,19 @@ a, p {
   font-size: 400%;
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
+.box .titlePages {
+  position: absolute;
+  z-index: 999;
+  margin: 0 40% 0 10%;
+  left: 0;
+  right: 0;
+  top: 30%;
+  bottom: 1%;
+  text-align: left;
+  color: #EBEBEB;
+  font-size: 400%;
+  text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+}
 .box .text {
   position: absolute;
   z-index: 999;
@@ -127,9 +140,15 @@ a, p {
   .box .title {
     font-size: 300%;
   }
+  .box .titlePages {
+    font-size: 300%;
+  }
 }
 @media (min-width: 375px) and (max-width: 700px){
   .box .title {
+    font-size: 200%;
+  }
+  .box .titlePages {
     font-size: 200%;
   }
   .box .text{
@@ -138,6 +157,9 @@ a, p {
 }
 @media (max-width: 375px){
   .box .title {
+    font-size: 157%;
+  }
+  .box .titlePages {
     font-size: 157%;
   }
   .box .text{
@@ -169,6 +191,8 @@ a, p {
   text-align: center;
 }
 .aboutbox img {
+  margin-left: 25%;
+  margin-right: 25%;
   border-radius: 5%;
   width: 40%;
   height: auto;
@@ -314,6 +338,52 @@ a, p {
     font-size: 157%;
   }
   .screenshotbox p{
+    font-size: 100%;
+  }
+}
+
+/* ScreenshotTwo Section
+---------------------------------*/
+.screenshotboxTwo {
+  background-color: white;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+
+}
+.screenshotboxTwo h2 {
+  position: relative;
+  margin-left: 10%;
+  font-size: 300%;
+  text-decoration-line: underline;
+  text-decoration-color:  #97DB4F;
+}
+.screenshotboxTwo p {
+  position: relative;
+  margin: 0 10% 1% 10%;
+  font-size: 150%;
+}
+.screenshotboxTwo .screens{
+  text-align: center;
+}
+.screenshotboxTwo img {
+  border-radius: 5%;
+  width: 40%;
+  height: auto;
+}
+@media (min-width: 375px) and (max-width: 700px){
+  .screenshotboxTwo h2 {
+    font-size: 200%;
+  }
+  .screenshotboxTwo p{
+    font-size: 125%;
+  }
+}
+@media (max-width: 375px){
+  .screenshotboxTwo h2 {
+    font-size: 157%;
+  }
+  .screenshotboxTwo p{
     font-size: 100%;
   }
 }

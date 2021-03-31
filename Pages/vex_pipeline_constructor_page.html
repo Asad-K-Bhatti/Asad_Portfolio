@@ -1,0 +1,182 @@
+<!doctype HTML>
+<html lan="en-GB" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Asad's Protfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A website consisting of all my previous projects, skills and work experience.">
+        <link href="../CSS/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <header class="navbar">
+            <a href="../index.html" class="homepage"><b>Asad's Portfolio</b></a>
+            <a href="../index.html#contact" class="pageend"><b>Contact</b></a>
+            <a href="#gallery" class="pages"><b>Gallery</b></a>
+            <a href="#projects" class="pages"><b>Projects</b></a>
+            <a href="../index.html#about" class="pages"><b>About</b></a>
+        </header>
+
+        <!-- Home Page -->
+        <div id="top" class="box">
+            <picture>
+                <source media="(min-width:600px)"
+                        srcset="../Media/Vex_Pipeline_Constructor_Page/black-320.jpg 320w,
+                                ../Media/Vex_Pipeline_Constructor_Page/black-480.jpg 480w,
+                                ../Media/Vex_Pipeline_Constructor_Page/black-720.jpg 720w,
+                                ../Media/Vex_Pipeline_Constructor_Page/black-960.jpg 960w,
+                                ../Media/Vex_Pipeline_Constructor_Page/black-1440.jpg 1440w,
+                                ../Media/Vex_Pipeline_Constructor_Page/black-1920.jpg 1920w">
+                                <!-- For computer displays -->
+                <source srcset="../Media/Vex_Pipeline_Constructor_Page/black-cropped-320.jpg 320w,
+                                ../Media/Vex_Pipeline_Constructor_Page/black-cropped-480.jpg 480w,
+                                ../Media/Vex_Pipeline_Constructor_Page/black-cropped-720.jpg 720w,
+                                ../Media/Vex_Pipeline_Constructor_Page/black-cropped-960.jpg 960w">
+                                <!-- for mobile devices -->
+                <img src="../Media/Vex_Pipeline_Constructor_Page/black-1920.jpg" alt="Vex Pipeline Constructor Title Page"
+                width="100%">
+            </picture>
+            <h1 class="titlePages">Vex Pipeline Constructor</h1>
+        </div>
+
+        <!-- About -->
+        <div id="about" class="aboutbox">
+            <h2>About the Robot</h2>
+            <p>A robot which can autonomously collect pipes and can be controlled to build a pipeline.</p>
+            <p>This is a robot whose purpose is to build a pipeline in two stages:</p>
+            <ul>
+                <p><b>Autonomous Pipe Collection</b></p>
+                <p>The robot is capable of supplying pipes autonomously collecting pipes from a vertical stand and then tracing a line 
+                    from which it will replace the pipes in a pipe cradle.</p>
+                <img src="../Media/Vex_Pipeline_Constructor_Page/Picture5-1.jpg" alt="Autonomous Pipeline Supply"
+                width="100%">
+                <p><b>Remote Controlled Pipeline Creation</b></p>
+                <p>Once pipes have autonomously been supplied, a user is able to control the robot and then create a pipeline by using a 
+                    remote control to pilot the robot and its features.</p>
+                <img src="../Media/Vex_Pipeline_Constructor_Page/Picture5-2.jpg" alt="Remote Controlled Pipeline Creation"
+                    width="100%">
+            </ul>
+        </div>
+
+        <!-- Design - Battery -->
+        <div class="screenshotbox">
+            <h2>Robot Design - Power Base</h2>
+            <div class="screens">
+                <p><i><b>Sketch</b></i></p>
+                <img src="../Media/Vex_Pipeline_Constructor_Page/Picture1-1.jpg" alt="Robot Power Base Sketch"
+                width="500" height="400">
+                <p>A platform consisting the VEX controller and a battery to power the entire machine.</p> 
+                <p>It was initially devised to separate the controller and battery from the bottom floor as it
+                    could have prevented the wooden blocks from passing underneath the robot</p>
+            </div>
+            <br>
+            <div class="screens">
+                <p><i><b>Computer Aided Design</b></i></p>
+                <img src="../Media/Vex_Pipeline_Constructor_Page/Picture1-2.jpg" alt="Robot Power Base CAD"
+                width="500" height="400">
+                <p>The design of this chassis was very simplistic at first to set up a sturdy battery base which was portable.</p>
+            </div>
+            <br>
+            <div class="screens">
+                <p><i><b>Physical Implementation</b></i></p>
+                <img src="../Media/Vex_Pipeline_Constructor_Page/Picture1-3.jpg" alt="Robot Power Base Physical Implementation"
+                width="500" height="400">
+                <p>Closely following the CAD design the battery base was constructed.</p>
+            </div>
+        </div>
+
+        <!-- Design - Base -->
+        <div class="screenshotboxTwo">
+            <h2>Robot Design - Base</h2>
+            <div class="screens">
+                <p><i><b>Sketch</b></i></p>
+                <img src="../Media/Vex_Pipeline_Constructor_Page/Picture2-1.jpg" alt="Robot Base Sketch"
+                width="500" height="400">
+                <p>A multipurpose platform which would be the robot's chassis and act as an intake system.</p>
+                <p>This intake system would consist of pincers that would grab the wood blocks and then release 
+                    them when they would be in the right position.</p>
+                <p>After that the VEX unit would release the block and pass over it, using a guide rail in the center and the pincers,
+                    the user would be able to easily align and separate the wooden blocks efficiently.</p>
+            </div>
+            <br>
+            <div class="screens">
+                <p><i><b>Physical Implementation</b></i></p>
+                <img src="../Media/Vex_Pipeline_Constructor_Page/Picture2-2.jpg" alt="Robot Base Physical Implementation"
+                width="500" height="400">
+                <p>Once physical implementation began, it became evident that the base platform could be merged with the battery base.</p>
+            </div>
+            <br>
+            <div class="screens">
+                <p><i><b>Completed Base</b></i></p>
+                <img src="../Media/Vex_Pipeline_Constructor_Page/Picture2-3.jpg" alt="Robot Base Completed"
+                width="500" height="400">
+                <p>After a few tests, to improve claw grip rubber bands were added, the base was expanded and stands were placed to
+                    accomodate for the claw.</p>
+            </div>
+        </div>
+
+        <!-- Design - Claw -->
+        <div class="screenshotbox">
+            <h2>Robot Design - Claw</h2>
+            <div class="screens">
+                <p><i><b>Sketch</b></i></p>
+                <img src="../Media/Vex_Pipeline_Constructor_Page/Picture3-1.jpg" alt="Robot Claw Sketch"
+                width="500" height="400">
+                <p>The final component which would consist of the robot’s main arm.</p> 
+                <p>This arm would be versatile allowing it to easily grab pipes and blocks from an elevated platform, and then be 
+                    able to place an object from any angle at any height.</p>
+            </div>
+            <br>
+            <div class="screens">
+                <p><i><b>Computer Aided Design</b></i></p>
+                <img src="../Media/Vex_Pipeline_Constructor_Page/Picture3-2.jpg" alt="Robot Claw CAD"
+                width="500" height="400">
+                <p>The design of this claw was constructed in a matter where the claw had access to 90 degrees of rotational freedom,
+                    while the main arm would have access to 360 degrees of freedom along the base and 180 degrees of freedom along the top.</p>
+            </div>
+            <br>
+            <div class="screens">
+                <p><i><b>Physical Implementation</b></i></p>
+                <img src="../Media/Vex_Pipeline_Constructor_Page/Picture3-3.jpg" alt="Robot Claw Physical Implementation"
+                width="500" height="400">
+                <p>Closely following the CAD design the battery base was constructed.</p>
+            </div>
+        </div>
+
+        <!-- Design - Final Product -->
+        <div class="screenshotbox">
+            <h2>Robot Design - Final Product</h2>
+            <div class="screens">
+                <p><i><b>Sketch</b></i></p>
+                <img src="../Media/Vex_Pipeline_Constructor_Page/Picture4-1.jpg" alt="Robot Final Product Sketch"
+                width="500" height="400">
+                <p>The final complete sketch of all components and their combination as a final product.</p>
+            </div>
+            <br>
+            <div class="screens">
+                <p><i><b>Computer Aided Design</b></i></p>
+                <img src="../Media/Vex_Pipeline_Constructor_Page/Picture4-2.jpg" alt="Robot Final Product CAD"
+                width="500" height="400">
+                <p>A complete CAD design of the robot.</p>
+            </div>
+            <br>
+            <div class="screens">
+                <p><i><b>Physical Implementation</b></i></p>
+                <img src="../Media/Vex_Pipeline_Constructor_Page/Picture4-3.jpg" alt="Robot Final Product Physical Implementation"
+                width="500" height="400">
+                <p>Final constructed product.</p>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <h2>Learn More</h2>
+            <p>Click the link below to read more about this project and how it was completed!</p>
+            <table>
+                <td>
+                    <p><a href="https://github.com/Asad-K-Bhatti/Vex_Pipeline_Constructor">Click to Learn More</a></p>
+                </td>
+            </table>
+        </footer>
+    </body>
+</html>
