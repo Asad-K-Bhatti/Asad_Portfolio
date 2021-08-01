@@ -142,7 +142,21 @@ a, p {
   background-color: #369FFF;
 }
 
-
+@media (min-width: 700px) and (max-width: 945px){
+  .wrapper {
+    height: 300px;
+  }
+}
+@media (min-width: 375px) and (max-width: 700px){
+  .wrapper {
+    height: 200px;
+  }
+}
+@media (max-width: 375px){
+  .wrapper {
+    height: 150px;
+  }
+}
 
 /* Home-Page
 ---------------------------------*/
@@ -276,13 +290,14 @@ a, p {
   width: 100%;
   padding-bottom: 3%;
   margin-bottom: -1%;
+  color: white;
 }
 .highlightbox h2 {
   position: relative;
   margin-left: 10%;
   font-size: 300%;
   text-decoration-line: underline;
-  text-decoration-color:  white;
+  text-decoration-color:  #EBEBEB;
 }
 .highlightbox table {
   width: 80%;
@@ -453,10 +468,10 @@ a, p {
   display: flex;
   overflow: auto;
   flex: none;
-  width: 80vw;
+  width: 60vw;
   height: 60vh;
   flex-flow: column nowrap;
-  margin-left: 5%;
+  margin-left: 15%;
   margin-bottom: 10%;
 }
 
@@ -480,6 +495,22 @@ a, p {
 
 .screens>div:nth-child(odd){
   background-color: #369FFF;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .screens {
+    height: 50vh;
+  }
+}
+@media (min-width: 500px) and (max-width: 768px){
+  .screens {
+    height: 40vh;
+  }
+}
+@media (max-width: 500px){
+  .screens {
+    height: 30vh;
+  }
 }
 
 /* Footer Section
