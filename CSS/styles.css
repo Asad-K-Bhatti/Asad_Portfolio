@@ -265,6 +265,20 @@ a, p {
   width: 40%;
   height: auto;
 }
+.aboutbox a {
+  float: center;
+  color: white;
+  text-align: center;
+  padding: 1% 1%;
+  margin-top: 3%;
+  text-decoration: none;
+  background-color: #FFBE00;
+  border-radius: 30px;
+}
+.aboutbox a:hover {
+  background-color: #369FFF;
+  color: white;
+}
 @media (min-width: 375px) and (max-width: 700px){
   .aboutbox h2 {
     font-size: 200%;
@@ -407,6 +421,360 @@ h1 {
   }
 }
 /* Flex/Grid Style obtained from - https://webdesign.tutsplus.com/articles/flexbox-vs-css-grid-which-should-you-use--cms-30184 */
+
+/* Description Section (ONE)
+---------------------------------*/
+.descriptionbox {
+  background-color: #7530FF;
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  padding-bottom: 3%;
+  margin-bottom: 5%;
+  color: white;
+  margin-left: 5%;
+  padding-left: 5%;
+  border-radius: 30px;
+}
+.descriptionbox h2 {
+  position: relative;
+  font-size: 300%;
+  text-decoration-line: underline;
+  text-decoration-color:  #369FFF;
+}
+
+.descriptionbox .band {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  
+  display: grid;
+  
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  
+}
+
+@media only screen and (min-width: 500px) {
+  .descriptionbox .band {
+    grid-template-columns: 1fr 1fr;
+  }  
+  .descriptionbox .item-1 {
+  grid-column: 1/ span 1;
+  }
+  .descriptionbox .item-2 {
+    grid-column: 2/ span 1;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+  .descriptionbox .band {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.descriptionbox .card {
+  min-height: 100%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #444;
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+  border-radius: 30px;
+}
+
+.descriptionbox .card:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+.descriptionbox .card article {
+  padding: 20px;
+  display: flex;
+  
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+.descriptionbox .card .thumb {
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.descriptionbox .card p { 
+  flex: 1;
+  line-height: 1.4;
+}
+
+.descriptionbox h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.descriptionbox .card span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
+}
+
+@media (min-width: 375px) and (max-width: 700px){
+  .descriptionbox h2 {
+    font-size: 200%;
+  }
+}
+@media (max-width: 375px){
+  .descriptionbox h2 {
+    font-size: 157%;
+  }
+}
+
+/* Description Section (TWO)
+---------------------------------*/
+.descriptionboxTwo {
+  background-color: #FFBE00;
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  padding-bottom: 3%;
+  margin-bottom: 5%;
+  color: white;
+  margin-left: 5%;
+  padding-left: 5%;
+  border-radius: 30px;
+}
+.descriptionboxTwo h2 {
+  position: relative;
+  font-size: 300%;
+  text-decoration-line: underline;
+  text-decoration-color:  #369FFF;
+}
+
+.descriptionboxTwo .band {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  
+  display: grid;
+  
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  
+}
+
+@media only screen and (min-width: 500px) {
+  .descriptionboxTwo .band {
+    grid-template-columns: 1fr 1fr;
+  }  
+  .descriptionboxTwo .item-1 {
+  grid-column: 1/ span 1;
+  }
+  .descriptionboxTwo .item-2 {
+    grid-column: 2/ span 1;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+  .descriptionboxTwo .band {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.descriptionboxTwo .card {
+  min-height: 100%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #444;
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+  border-radius: 30px;
+}
+
+.descriptionboxTwo .card:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+.descriptionboxTwo .card article {
+  padding: 20px;
+  display: flex;
+  
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+.descriptionboxTwo .card .thumb {
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.descriptionboxTwo .card p { 
+  flex: 1;
+  line-height: 1.4;
+}
+
+.descriptionboxTwo h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.descriptionboxTwo .card span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
+}
+
+@media (min-width: 375px) and (max-width: 700px){
+  .descriptionboxTwo h2 {
+    font-size: 200%;
+  }
+}
+@media (max-width: 375px){
+  .descriptionboxTwo h2 {
+    font-size: 157%;
+  }
+}
+
+/* Description Section (THREE)
+---------------------------------*/
+.descriptionboxThree {
+  background-color: #369FFF;
+  position: relative;
+  display: inline-block;
+  width: 90%;
+  padding-bottom: 3%;
+  margin-bottom: 5%;
+  color: white;
+  margin-left: 5%;
+  padding-left: 5%;
+  border-radius: 30px;
+}
+.descriptionboxThree h2 {
+  position: relative;
+  font-size: 300%;
+  text-decoration-line: underline;
+  text-decoration-color:  #FFBE00;
+}
+
+.descriptionboxThree .band {
+  width: 90%;
+  max-width: 1240px;
+  margin: 0 auto;
+  
+  display: grid;
+  
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  
+}
+
+@media only screen and (min-width: 500px) {
+  .descriptionboxThree .band {
+    grid-template-columns: 1fr 1fr;
+  }  
+  .descriptionboxThree .item-1 {
+  grid-column: 1/ span 1;
+  }
+  .descriptionboxThree .item-2 {
+    grid-column: 2/ span 1;
+    }
+}
+
+@media only screen and (min-width: 850px) {
+  .descriptionboxThree .band {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.descriptionboxThree .card {
+  min-height: 100%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #444;
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+  border-radius: 30px;
+}
+
+.descriptionboxThree .card:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+.descriptionboxThree .card article {
+  padding: 20px;
+  display: flex;
+  
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+.descriptionboxThree .card .thumb {
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.descriptionboxThree .card p { 
+  flex: 1;
+  line-height: 1.4;
+}
+
+.descriptionboxThree h1 {
+  font-size: 20px;
+  margin: 0;
+  color: #333;
+}
+
+.descriptionboxThree .card span {
+  font-size: 12px;
+  font-weight: bold;
+  color: #999;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
+}
+
+@media (min-width: 375px) and (max-width: 700px){
+  .descriptionboxThree h2 {
+    font-size: 200%;
+  }
+}
+@media (max-width: 375px){
+  .descriptionboxThree h2 {
+    font-size: 157%;
+  }
+}
 
 /* Screenshot Section
 ---------------------------------*/
