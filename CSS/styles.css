@@ -128,7 +128,7 @@ a, p {
 .two {
   width: 100%;
   height: 800px;
-  background-color: #FFBE00;
+  background-color: #369FFF;
   bottom: -30px;
   left: -80px;
 }
@@ -139,7 +139,7 @@ a, p {
   height: 450px;
   bottom: -80px;
   right: -100px;
-  background-color: #369FFF;
+  background-color: #FFBE00;
 }
 
 @media (min-width: 700px) and (max-width: 945px){
@@ -442,6 +442,16 @@ h1 {
   text-decoration-line: underline;
   text-decoration-color:  #369FFF;
 }
+.descriptionbox .text {
+  text-align: center;
+  font-size: 200%;
+}
+.descriptionbox video{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+  border-radius: 10px;
+}
 
 .descriptionbox .band {
   width: 90%;
@@ -461,10 +471,16 @@ h1 {
     grid-template-columns: 1fr 1fr;
   }  
   .descriptionbox .item-1 {
-  grid-column: 1/ span 1;
-  }
-  .descriptionbox .item-2 {
-    grid-column: 2/ span 1;
+    grid-column: 1/ span 1;
+    }
+    .descriptionbox .item-2 {
+      grid-column: 2/ span 1;
+    }
+    .descriptionbox .item-1long {
+      grid-column: 1/ span 2;
+    }
+    .descriptionbox .item-2long {
+      grid-column: 3/ span 2;
     }
 }
 
@@ -533,10 +549,16 @@ h1 {
   .descriptionbox h2 {
     font-size: 200%;
   }
+  .descriptionbox .text {
+    font-size: 150%;
+  }
 }
 @media (max-width: 375px){
   .descriptionbox h2 {
     font-size: 157%;
+  }
+  .descriptionbox .text {
+    font-size: 100%;
   }
 }
 
@@ -560,6 +582,10 @@ h1 {
   text-decoration-line: underline;
   text-decoration-color:  #369FFF;
 }
+.descriptionbox .text {
+  text-align: center;
+  font-size: 200%;
+}
 
 .descriptionboxTwo .band {
   width: 90%;
@@ -579,10 +605,16 @@ h1 {
     grid-template-columns: 1fr 1fr;
   }  
   .descriptionboxTwo .item-1 {
-  grid-column: 1/ span 1;
-  }
-  .descriptionboxTwo .item-2 {
-    grid-column: 2/ span 1;
+    grid-column: 1/ span 1;
+    }
+    .descriptionboxTwo .item-2 {
+      grid-column: 2/ span 1;
+    }
+    .descriptionboxTwo .item-1long {
+      grid-column: 1/ span 2;
+    }
+    .descriptionboxTwo .item-2long {
+      grid-column: 3/ span 2;
     }
 }
 
@@ -651,10 +683,16 @@ h1 {
   .descriptionboxTwo h2 {
     font-size: 200%;
   }
+  .descriptionbox .text {
+    font-size: 150%;
+  }
 }
 @media (max-width: 375px){
   .descriptionboxTwo h2 {
     font-size: 157%;
+  }
+  .descriptionbox .text {
+    font-size: 100%;
   }
 }
 
@@ -677,6 +715,10 @@ h1 {
   font-size: 300%;
   text-decoration-line: underline;
   text-decoration-color:  #FFBE00;
+}
+.descriptionbox .text {
+  text-align: center;
+  font-size: 200%;
 }
 
 .descriptionboxThree .band {
@@ -701,7 +743,13 @@ h1 {
   }
   .descriptionboxThree .item-2 {
     grid-column: 2/ span 1;
-    }
+  }
+  .descriptionboxThree .item-1long {
+    grid-column: 1/ span 2;
+  }
+  .descriptionboxThree .item-2long {
+    grid-column: 3/ span 2;
+  }
 }
 
 @media only screen and (min-width: 850px) {
@@ -769,10 +817,16 @@ h1 {
   .descriptionboxThree h2 {
     font-size: 200%;
   }
+  .descriptionbox .text {
+    font-size: 150%;
+  }
 }
 @media (max-width: 375px){
   .descriptionboxThree h2 {
     font-size: 157%;
+  }
+  .descriptionbox .text {
+    font-size: 100%;
   }
 }
 

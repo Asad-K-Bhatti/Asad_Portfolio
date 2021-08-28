@@ -1,0 +1,182 @@
+<!doctype HTML>
+<html lan="en-GB" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Asad's Protfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A website consisting of all my previous projects, skills and work experience.">
+        <link href="../CSS/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <header class="navbar">
+            <a href="../index.html" class="homepage"><b>Asad's Portfolio</b></a>
+            <a href="../index.html#contact" class="pageend"><b>Contact</b></a>
+            <a href="#gallery" class="pages"><b>Gallery</b></a>
+            <a href="../index.html#projects" class="pages"><b>Projects</b></a>
+            <a href="../index.html#about" class="pages"><b>About</b></a>
+        </header>
+
+        <!-- Home Page -->
+        <div id="top" class="box">
+            <div class="wrapper">
+                <div class="base one"></div>
+                <div class="base two"></div>
+                <div class="base three"></div>
+            </div>
+            <h1 class="titlePages">Room Visualizer</h1>
+        </div>
+
+        <!-- About -->
+        <div id="about" class="aboutbox">
+            <h2>General Description</h2>
+            <p><b>The spatial measurement system acquires information about the area around the
+                system based upon the press of a single button.</b></p>
+            <p>The system operates in <b>3 stages:</b></p>
+            <ul>
+                <p>Using a <b>stepping motor</b> to provide a <b>360 degree measurement</b> of the distance
+                    along a <b>single vertical</b> (y-z) geometric plane, with <b>multiple measurements</b> taken
+                    at different distances along the x axis.</p>
+                <p>Upon obtaining the data of the surrounding environment, the information is stored
+                    on the microcontroller’s local memory which is <b>communicated</b> to the user’s
+                    computer.</p>
+                <p>After successful communication, the computer will then take the <b>data</b> and
+                    process it into a <b>graphic</b> for the user to see.</p>
+            </ul>
+            
+        </div>
+
+        <!-- Block Diagram - Data Flow Graph -->
+        <div class="descriptionbox">
+            <h2>Block Diagram - Data Flow Graph</h2>
+            <img src="../Media/Room_Visualizer_Page/0 Block Diagram (Data Flow Graph).png" alt="A Block Diagram describing the Room Visualizer"
+                width="100%">
+            <p class="text">A Data Flow Graph describing the steps to obtain an environment scan using the Room Visualizer</p>
+        </div>
+
+        <!-- FlowCharts -->
+        <div class="descriptionboxTwo">
+            <h2>Design - Flow Charts</h2>
+            <div class="band">
+                <div class="item-1long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Room_Visualizer_Page/1-1\ Microcontroller\ Flow\ Chart.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Microcontroller Flow Chart</h1>
+                        <p>The design layout for how the microcontroller should perform in order to store data of the surrounding environment</p>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-2long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Room_Visualizer_Page/1-2\ Python\ Flow\ Chart.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Python Flow Chart</h1>
+                        <p>The design layout for how the data obtained from the microcontroller should perform in order to output a visual</p>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Physical Design -->
+        <div class="descriptionbox">
+            <h2>Physical Design</h2>
+            <div class="band">
+                <div class="item-1long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Room_Visualizer_Page/2-1\ Circuit\ Schematic.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Circuit Schematic</h1>
+                        <p>The circuit structure and how components like the stepper motor, Time of Flight sensor and the activation button connect to the main controller</p>
+                        <p>Through the use of pspice the above schematic was created which shows the pin connections from each device to the main controller </p> 
+                        </article>
+                    </a>
+                </div>
+                <div class="item-2long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Room_Visualizer_Page/2-2\ Physical\ Components.jpg); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Physical Components</h1>
+                        <p>The physical result of the circuit schematic:</p>
+                        <p>The Time of Flight sensor (Used to determine the distance of the closest object by firing a laser and calculating the distance travelled by the laser based 
+                            on the time it took to bounce back to the sensor)</p>
+                        <p>The stepper motor which rotates the ToF sensor 360 degrees to obtain a distance reading of a single yz-plane which is activaded by the button on the 
+                            breadboard </p>
+                        <p>The compact box used to house the device is moved 10cm forward along the x-axis while keeping everything steady and after taking a single 360 degree 
+                            scan the box moves again to obtain the measurements of the next position on the x-axis.</p>
+                        </article>
+                    </a>
+                </div>
+            </div>
+            <video controls>
+                <source src="../Media/Room_Visualizer_Page/3 Demo Video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="text"> Video demonstration of one 360 degree environment scan along the yz-plane using the Room Visualizer </p>
+        </div>
+
+        <!-- Final Product -->
+        <div class="descriptionboxThree">
+            <h2>Final Product</h2>
+            <div class="band">
+                <div class="item-1long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Room_Visualizer_Page/4-1\ Environment\ MultiView.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Demo Environment MultiView</h1>
+                        <p>A rough multiview drawing of the demo environmentwhich the Room Visualizer will scan</p>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-2long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Room_Visualizer_Page/4-2\ Scanner\ and\ Output.jpg); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Scanner</h1>
+                        <p>A 360 scan of the environment along 10 different points in a line are taken</p>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-1long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Room_Visualizer_Page/4-3\ Communication\ Output.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Data Communication</h1>
+                        <p>The data obtained by the microcontroller is communicated to the computer which is processed through C and Python</p>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-2long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Room_Visualizer_Page/4-4\ Visualization.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Visualization</h1>
+                        <p>Using the distance values and the angle at which the distance value was taken from, the python program plots the a 3D graph to represent the visual 
+                            obtained by the Room Visualizer. Which as seen closely resembles the multiview drawing</p>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <h2>Learn More</h2>
+            <p>Click the link below to read more about this project and how it was completed!</p>
+            <table>
+                <td>
+                    <p><a href="https://github.com/Asad-K-Bhatti/Room-Visualizer">Click to Learn More</a></p>
+                </td>
+            </table>
+        </footer>
+    </body>
+</html>
