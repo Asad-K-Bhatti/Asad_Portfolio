@@ -452,6 +452,11 @@ h1 {
   margin-top: 10%;
   border-radius: 10px;
 }
+.descriptionbox img{
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 10px;
+}
 
 .descriptionbox .band {
   width: 90%;
@@ -582,9 +587,20 @@ h1 {
   text-decoration-line: underline;
   text-decoration-color:  #369FFF;
 }
-.descriptionbox .text {
+.descriptionboxTwo .text {
   text-align: center;
   font-size: 200%;
+}
+.descriptionboxTwo video{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+  border-radius: 10px;
+}
+.descriptionboxTwo img{
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 10px;
 }
 
 .descriptionboxTwo .band {
@@ -683,7 +699,7 @@ h1 {
   .descriptionboxTwo h2 {
     font-size: 200%;
   }
-  .descriptionbox .text {
+  .descriptionboxTwo .text {
     font-size: 150%;
   }
 }
@@ -691,7 +707,7 @@ h1 {
   .descriptionboxTwo h2 {
     font-size: 157%;
   }
-  .descriptionbox .text {
+  .descriptionboxTwo .text {
     font-size: 100%;
   }
 }
@@ -716,10 +732,37 @@ h1 {
   text-decoration-line: underline;
   text-decoration-color:  #FFBE00;
 }
-.descriptionbox .text {
+.descriptionboxThree .text {
   text-align: center;
   font-size: 200%;
 }
+.descriptionboxThree video{
+  width: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+  border-radius: 10px;
+}
+.descriptionboxThree img{
+  width: 80%;
+  margin-left: 10%;
+  border-radius: 10px;
+}
+.descriptionboxThree table, .descriptionboxThree th, .descriptionboxThree td{
+  border: 3px solid white;
+}
+.descriptionboxThree table{
+  margin-left: 10%;
+  padding-left: 5%;
+  width: 80%;
+  border-collapse: collapse;
+  font-size: 150%;
+  text-align: left;
+}
+.descriptionboxThree mark{
+  background-color: #FFBE00;
+  color: white;
+}
+
 
 .descriptionboxThree .band {
   width: 90%;
@@ -817,15 +860,21 @@ h1 {
   .descriptionboxThree h2 {
     font-size: 200%;
   }
-  .descriptionbox .text {
+  .descriptionboxThree .text {
     font-size: 150%;
+  }
+  .descriptionboxThree table {
+    font-size: 125%;
   }
 }
 @media (max-width: 375px){
   .descriptionboxThree h2 {
     font-size: 157%;
   }
-  .descriptionbox .text {
+  .descriptionboxThree .text {
+    font-size: 100%;
+  }
+  .descriptionboxThree table {
     font-size: 100%;
   }
 }
