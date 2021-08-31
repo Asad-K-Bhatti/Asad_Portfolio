@@ -1,0 +1,134 @@
+<!doctype HTML>
+<html lan="en-GB" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Asad's Protfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A website consisting of all my previous projects, skills and work experience.">
+        <link href="../CSS/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <header class="navbar">
+            <a href="../index.html" class="homepage"><b>Asad's Portfolio</b></a>
+            <a href="../index.html#contact" class="pageend"><b>Contact</b></a>
+            <a href="#gallery" class="pages"><b>Gallery</b></a>
+            <a href="../index.html#projects" class="pages"><b>Projects</b></a>
+            <a href="../index.html#about" class="pages"><b>About</b></a>
+        </header>
+
+        <!-- Home Page -->
+        <div id="top" class="box">
+            <div class="wrapper">
+                <div class="base one"></div>
+                <div class="base two"></div>
+                <div class="base three"></div>
+            </div>
+            <h1 class="titlePages">Arduino House</h1>
+        </div>
+
+        <!-- About -->
+        <div id="about" class="aboutbox">
+            <h2>Project Objective</h2>
+            <p><b>Our objective is to create functioning house using buttons to control internal lighting and a security 
+                system composed of a sensor and a buzzer.</b></p>
+            
+            
+        </div>
+
+        <!-- Basic Wiring -->
+        <div class="descriptionbox">
+            <h2>Basic Wiring</h2>
+            <p class="text">As the project required the use of multiple LEDs and electronic devices, a basic understanding of how some of these devices need to be wired would be beneficial.</p>
+            <img src="../Media/Arduino_House_Page/0 Basic LED wiring.jpg" alt="The circuit layout to power a single LED."
+                width="100%">
+            <p class="text">For example above is the circuit layout to power a single LED which required a resistor and LED in series connected to the power source which in this case was the Arduino.</p>
+        </div>
+
+        <!-- House Wiring -->
+        <div class="descriptionboxTwo">
+            <h2>House Wiring</h2>
+            <div class="band">
+                <div class="item-1long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Arduino_House_Page/1-1\ Arduino\ Scematic.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Arduino House Schematic</h1>
+                        <p>By repeating the circuit layout for a single LED (as shown previously), we could repeat that design 4 times to light up 4 rooms in the house with every 
+                            light attached to a button which would act as a light switch.</p>
+                        <p>Alongside the lighting we needed to wire the security system which composed of a ultrasonic sensor to detect anyone coming into the house and a 
+                            buzzer to sound when a person is detected by the ultrasonic sensor.</p>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-2long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Arduino_House_Page/1-2\ House\ Wiring.jpg); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Arduino House Wiring</h1>
+                        <p>The result of digital schematic is as shown above.</p>
+                        <p>The left side contains the button controls to the LEDs in each room (1 off and 1 on per light) and on the right hand side is the Arduino controller 
+                            to manage and power the entire circuit</p>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Final Product -->
+        <div class="descriptionbox">
+            <h2>Final Product</h2>
+            <div class="band">
+                <div class="item-1long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Arduino_House_Page/2-1\ House\ Exterior.jpg); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>House Exterior</h1>
+                        <p>The outer design of the Arduino House</p>
+                        <p>The outer design is double layered such that the wiring for LEDs to each floor is hidden as it would be in a real house.</p> 
+                        </article>
+                    </a>
+                </div>
+                <div class="item-2long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Arduino_House_Page/2-2\ House\ Interior.jpg); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>House Interior</h1>
+                        <p>The inside of the Arduino House</p>
+                        <p>The Basement level contains the Arduino unit and controls to every light as well as the buzzer in the event the ultrasonic sensor detects someone 
+                            coming through the front door.</p>
+                        <p>As mentioned earlier the main door has the ultrasonic sensor above it which would act as a security system and each room in the house has an LED to 
+                            light them up.</p>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Final Product -->
+        <div class="descriptionboxThree">
+            <h2>Arduino House Video Demo</h2>
+            <video controls>
+                <source src="../Media/Arduino_House_Page/3 House Demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p class="text">Video demonstration of the LED function for the Arduino House</p>
+            <p class="text">The security system successfully worked but the buzzer was drowned out by background noise, as such due to the noise pollution the video has been muted.</p>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <h2>Learn More</h2>
+            <p>Click the link below to read more about this project and how it was completed!</p>
+            <table>
+                <td>
+                    <p><a href="https://github.com/Asad-K-Bhatti/Arduino_House">Click to Learn More</a></p>
+                </td>
+            </table>
+        </footer>
+    </body>
+</html>
