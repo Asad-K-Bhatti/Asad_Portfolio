@@ -1,0 +1,307 @@
+<!doctype HTML>
+<html lan="en-GB" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>Asad's Protfolio</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="A website consisting of all my previous projects, skills and work experience.">
+        <link href="../CSS/styles.css" rel="stylesheet">
+    </head>
+    <body>
+        <!-- Navigation Bar -->
+        <header class="navbar">
+            <a href="../index.html" class="homepage"><b>Asad's Portfolio</b></a>
+            <a href="../index.html#contact" class="pageend"><b>Contact</b></a>
+            <a href="../index.html#projects" class="pages"><b>Projects</b></a>
+            <a href="../index.html#about" class="pages"><b>About</b></a>
+        </header>
+
+        <!-- Home Page -->
+        <div id="top" class="box">
+            <div class="wrapper">
+                <div class="base one"></div>
+                <div class="base two"></div>
+                <div class="base three"></div>
+            </div>
+            <h1 class="titlePages">Mechanical Hand Gear Train</h1>
+        </div>
+
+        <!-- About -->
+        <div id="about" class="aboutbox">
+            <h2>About the Mechanism</h2>
+            <p>This Mechanism is intended to be a <b>functional prosthetic hand</b> that focuses on the motion of the <b>thumb and forefinger.</b></p>
+            <br>
+            <p>The <b>movement</b> of the thumb and forefinger is to be enabled through a <b>gear train</b> of multiple gears meshing together and connected to a <b>motor.</b></p>
+            <p>The motor will provide rotational motion, which will be transferred to the finger and thumb through the gears.</p>
+            <p>The goal of this prosthetic hand is to convert an input speed of <b>936 RPM</b> from the motor into a resulting rotational speed of <b>20 RPM</b> at the fingers.</p>
+            <br>
+            <p>There are two major <b>constraints</b>:</p>
+            <ul>
+                <p><b>Size of chassis</b></p>
+                <p>The chassis for the gear train as well as the gears must fit inside the given shell for the prosthetic hand.</p>
+                <img src="../Media/Mechanical_Hand_Gear_Train_Page/0 - Isometric View of Prosthetic Frame.png" alt="Shell for Prosthetic Hand"
+                width="100%">
+                <p><b>Gear Limitation</b></p>
+                <p>The size of all the gears can not be less than 12 teeth and the gear ratio between two meshed gears cannot exceed 5 or be less than 1/5.</p>
+            </ul>
+        </div>
+
+        <!-- Preliminary Design -->
+        <div class="descriptionbox">
+            <h2>Preliminary Gear Train Design</h2>
+            <p class="text">Before performing any gear related calculations a general gear design needed to be chosen</p> 
+            <div class="band">
+                <div class="item-1long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Mechanical_Hand_Gear_Train_Page/1-1\ Top\ of\ design\ 1.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Design 1</h1>
+                        <p>Consists of spur gears and worm gears which will convey the speed from the previous set of meshed gears to the next.</p> 
+                        <p>The primary concern for this design was whether the large middle gear would hit the top of the prosthetic hand shell.</p> 
+                        </article>
+                    </a>
+                </div>
+                <div class="item-2long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Mechanical_Hand_Gear_Train_Page/1-2\ Top\ of\ design\ 2.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Design 2</h1>
+                        <p>This gear train takes advantage of using the spur gears along a horizontal plane which would provide more room to expand the middle gear and therefore reduce the RPM 
+                            from the motor to the fingers by a large margin.</p>
+                        <p>The primary concern for this design was how to accomodate and calculate the speed as a result of the worm gears and whether the horizontal spur gears 
+                            would interfere with any of the vertical spur gears.</p>
+                        </article>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <p class="text">Following these designs, the consensus decided to create a design similar to Design 1 but remove the worm gears as they can easily be replaced by an axle and do 
+                not affect the RPM in any manner</p>
+            <br>
+            <p class="text">After the gear train design was decided and accurate calculations were performed the following table of design parameters was created.</p>
+            <img src="../Media/Mechanical_Hand_Gear_Train_Page/1-3 Table of Design Parameters.png" alt="Table of Design Parameters"
+                width="100%">
+            <p class="text">For more information on the calculations please visit the github page at the bottom of the page.</p>
+        </div>
+
+        <!-- Final Gear Train Design -->
+        <div class="descriptionboxTwo">
+            <h2>Final Gear Train Design</h2>
+            <p class="text">Making use of the above Table, the gear train layout could be accurately visualized.</p>
+            <p class="text">The first drawing shows the simple gear train without the prosthetic hand shell while the other shows what the gear train would look like in the shell.</p>
+            <div class="band">
+                <div class="item-1long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Mechanical_Hand_Gear_Train_Page/2-1\ Chassis\ Initial\ Design.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Simplified Gear Train Design</h1>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-2long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Mechanical_Hand_Gear_Train_Page/2-2\ Detailed\ Gear\ Mechanism\ Diagram.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Detailed Gear Train Design</h1>
+                        </article>
+                    </a>
+                </div>
+            </div>
+            <p class="text">After careful observation, we found in the detailed design that gear F seems to hit the "knuckles" of the prosthetic hand, so we needed to adjust the placement of the gears to 
+                accomodate for this mishap.</p>
+            <br>
+            <p class="text">As a result the final layout for the gear train became:</p>
+            <img src="../Media/Mechanical_Hand_Gear_Train_Page/2-3 Chassis Redesign (3 of 3).jpg" alt="Final Gear Train Design"
+                width="100%">
+            <p class="text">For more information on the calculations please visit the github page at the bottom of the page.</p>
+        </div>
+
+        <!-- Computer Aided Design -->
+        <div class="descriptionbox">
+            <h2>Computer Aided Design</h2>
+            <p class="text">Once the final gear train layout was confirmed the gears, fingers and gear train chassis were ready to be printed with the aid of AutoCAD Inventor and 3D printers.</p>
+            <p class="text">Some of the CAD designs can be seen below.</p>
+            <div class="band">
+                <div class="item-1">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Mechanical_Hand_Gear_Train_Page/3-1\ 24mm\ Spur\ Gear.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>24mm Spur Gear</h1>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-2">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Mechanical_Hand_Gear_Train_Page/3-2\ 48mm\ Spur\ Gear.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>48mm Spur Gear</h1>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-3">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Mechanical_Hand_Gear_Train_Page/3-3\ Finger.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Finger/Thumb</h1>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-4">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Mechanical_Hand_Gear_Train_Page/3-4\ Final\ Chassis.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Final Chassis Design</h1>
+                        </article>
+                    </a>
+                </div>
+            </div>
+            <p class="text">As seen above the chassis design was created to match the axle alignment points while also creating minimal space between the gears and the chassis wall.</p>
+            <p class="text">This way the chassis and gear train would be able to fit inside the prosthetic hand shell and meet one of our primary constraints.</p>
+            <p class="text">There are also supporting walls between each system of meshed gears so the axle connections are more robust and sturdy. This also prevents any weakness in the 
+                chassis structure.</p>
+        </div>
+
+        <!-- CAD Assembly and Simulation -->
+        <div class="descriptionboxTwo">
+            <h2>CAD Assembly</h2>
+            <p class="text">Using the CAD pieces above the entire mechanical hand gear train could be assembled as shown below.</p>
+            <div class="band">
+                <div class="item-1long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Mechanical_Hand_Gear_Train_Page/4-1\ Final\ Assembly.PNG); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Final Assembly</h1>
+                        <p>The complete mechanical hand gear train in the CAD tool.</p>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-2long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Mechanical_Hand_Gear_Train_Page/4-2\ Fully\ Assembled\ Desgin\ in\ Hand\ Frame.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Final Assembly in Shell</h1>
+                        <p>To confirm that the gear train and the chassis fit in the shell of the prosthetic hand, the CAD assembled final design was inserted and fit succeessfully</p>
+                        </article>
+                    </a>
+                </div>
+            </div>            
+        </div>
+
+        <!-- CAD Assembly and Simulation -->
+        <div class="descriptionbox">
+            <h2>Simulation</h2>
+            <p class="text">Once the full assembly was obtained, we were able to determine if our gear train meets the primary objective which was to take a motor speed of 936 RPM 
+                and reduce it to 20 RPM at the fingers.</p>
+            <p class="text">Once simulated the following results were produced:</p>
+            <div class="band">
+                <div class="item-1long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Mechanical_Hand_Gear_Train_Page/5-1\ Motor\ Input\ Graph.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Motor Input Graph</h1>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-1long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Mechanical_Hand_Gear_Train_Page/5-2\ Finger\ Output\ Graph.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Finger Output Graph</h1>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-2long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Mechanical_Hand_Gear_Train_Page/5-3\ Thumb\ Output\ Graph.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Thumb Output Graph</h1>
+                        </article>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <p class="text">As seen from the images the RPM difference between the Motor and the finger/thumb is very large.</p>
+            <p class="text">Also, the thumb and the finger graphs are mirrored and this is because they move in opposite directions to simulate opening and closing a hand.</p>
+            <p class="text">When the finger moves clockwise the thumb will move counter-clockwise to open up the hand.</p>
+            <p class="text">When the finger moves counter-clockwise the thumb will move clockwise to close the hand.</p>
+            <br>
+            <p class="text">To obtain a clear image of the graph please visit the github link at the bottom of the page!</p>
+        </div>
+
+        <!-- Final Product -->
+        <div class="descriptionboxThree">
+            <h2>Final Product</h2>
+            <p class="text">Since all restrictions and objectives had been met by the CAD designs and software. The final product was 3D printed and blow were the final results.</p>
+            <div class="band">
+                <div class="item-1long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Mechanical_Hand_Gear_Train_Page/6-1\ Final\ Assembly\ Front\ View.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Front View</h1>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-2long">
+                    <a class="card">
+                        <div class="thumb" style="background-image: url(../Media/Mechanical_Hand_Gear_Train_Page/0\ -\ Isometric\ View\ of\ Prosthetic\ Frame.png); background-size: contain; background-repeat: no-repeat;
+                        background-position: center center;"></div>
+                        <article>
+                        <h1>Top View</h1>
+                        </article>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <h2>Problems and Future Solutions:</h2>
+            <p class="text">As seen above the gear train and chassis had been printed successfully but the final product had two major flaws.</p>
+            <div class="band">
+                <div class="item-1long">
+                    <a class="card">
+                        <article>
+                        <h1>1. Cuts in Chassis</h1>
+                        <p>As is seen above the chassis has been cut to accomodate for the hardware required to keep the gears in place (i.e. bolts to fasten the gear on the axle from either side).</p>
+                        <p>As a result for not acommodating space for the bolts in the chassis design there was enough space for the gears but not enough space for the gears and the bolts. Resulting in the chassis 
+                            being cut and significantly reducing the stability and structure of the chassis</p>
+                        <p><b>Possible Solution:</b> Accomodate hardware space into design or build a chassis with excess space and then trim down to fit.</p>
+                        </article>
+                    </a>
+                </div>
+                <div class="item-2long">
+                    <a class="card">
+                        <article>
+                        <h1>2. Gears unable to spin axle connected gears</h1>
+                        <p>It is not visible in the images above but the gears on the chassis were unable to spin the gears with axle connections. Meaning the gears that were meshed were able to spin and move each other but not spin the axle.</p>
+                        <p>This maybe a result of excessive drilling for the center hole of the chassis or poor adhesion of the gear to the axle.</p>
+                        <p><b>Possible Solution:</b> Use tiny amounts of glue to fasten the bolts to the gear firmly or if possible print the center of the gear to be a very snug fit on the axle such that minor adjustment is not needed.</p>
+                        </article>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <h2>Learn More</h2>
+            <p>Click the link below to read more about this project and how it was completed!</p>
+            <table>
+                <td>
+                    <p><a href="https://github.com/Asad-K-Bhatti/Mechincal_Hand_Gear_Train">Click to Learn More</a></p>
+                </td>
+            </table>
+        </footer>
+    </body>
+</html>

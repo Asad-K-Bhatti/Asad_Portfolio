@@ -445,6 +445,7 @@ h1 {
 .descriptionbox .text {
   text-align: center;
   font-size: 200%;
+  margin-right: 5%;
 }
 .descriptionbox video{
   width: 80%;
@@ -590,6 +591,7 @@ h1 {
 .descriptionboxTwo .text {
   text-align: center;
   font-size: 200%;
+  margin-right: 5%;
 }
 .descriptionboxTwo video{
   width: 80%;
@@ -735,6 +737,7 @@ h1 {
 .descriptionboxThree .text {
   text-align: center;
   font-size: 200%;
+  margin-right: 5%;
 }
 .descriptionboxThree video{
   width: 80%;
