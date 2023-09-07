@@ -1,14 +1,10 @@
 /*
-#ff8800 - Orange
-#49C6E5 - Sky Blue
-#97DB4F - Lime Green
-#1B2845 - Navy Blue
-#F7F0F5 - Plat
+Color Pallete:
+GreyGreen = #333d33
+LightGreyGreen = #657c7b
+BlueGrey = #38495a
 
 
-#7530FF - Purple
-#FFBE00 - Yellow
-#369FFF - Blue
 */
 
 /* Global Styles
@@ -45,7 +41,7 @@ a, p {
 /* Navigation Bar
 ---------------------------------*/
 .navbar {
-  background-color: #7530ff;
+  background-color: black;
   filter:grayscale(40%);
   overflow: hidden;
   position: fixed;
@@ -76,15 +72,15 @@ a, p {
   text-align: center;
   padding: 2%;
   text-decoration: none;
-  background-color: #FFBE00;
+  background-color: #657c7b;
 }
 .navbar a:hover {
-  background-color: #369FFF;
-  color: #F7F0F5;
+  background-color: white;
+  color: black;
 }
 .topnav a.active {
-  background-color: #369FFF;
-  color: #F7F0F5;
+  background-color: white;
+  color: black;
 }
 @media (min-width: 415px) and (max-width: 810px){
   .navbar {
@@ -119,7 +115,7 @@ a, p {
   border-radius: 100%;
   width: 100%;
   height: 600px;
-  background-color: #7530ff;
+  background-color: #38495a;
   left: -50px;
   top: -300px;
   z-index: 3;
@@ -176,7 +172,7 @@ a, p {
   top: 20%;
   bottom: 1%;
   text-align: left;
-  color: #EBEBEB;
+  color: white;
   font-size: 400%;
   text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
 }
@@ -243,12 +239,15 @@ a, p {
   width: 100%;
   margin-bottom: 5%;
 }
+.aboutbox h1{
+  color: white;
+}
 .aboutbox h2 {
   position: relative;
   margin-left: 10%;
   font-size: 300%;
   text-decoration-line: underline;
-  text-decoration-color:  #369FFF;
+  text-decoration-color:  #38495a;
 }
 .aboutbox p {
   position: relative;
@@ -268,15 +267,15 @@ a, p {
 .aboutbox a {
   float: center;
   color: white;
-  text-align: center;
+  text-align: left;
   padding: 1% 1%;
   margin-top: 3%;
   text-decoration: none;
-  background-color: #FFBE00;
+  background-color: #38495a;
   border-radius: 30px;
 }
 .aboutbox a:hover {
-  background-color: #369FFF;
+  background-color: #657c7b;
   color: white;
 }
 @media (min-width: 375px) and (max-width: 700px){
@@ -298,7 +297,7 @@ a, p {
 /* Highlights Section
 ---------------------------------*/
 .highlightbox {
-  background-color: white;
+  background-color: #657c7b;
   position: relative;
   display: inline-block;
   width: 100%;
@@ -307,13 +306,13 @@ a, p {
   color: white;
 }
 .highlightbox h2 {
-  background-color: #7530FF;
+  background-color: #657c7b;
   position: relative;
   margin-left: 5%;
   padding-left: 5%;
   font-size: 300%;
   text-decoration-line: underline;
-  text-decoration-color:  #369FFF;
+  text-decoration-color:  #38495a;
   border-radius: 30px;
   margin-right: 42%;
 }
@@ -404,7 +403,56 @@ h1 {
 .card span {
   font-size: 12px;
   font-weight: bold;
-  color: #999;
+  color: #657c7b;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  margin: 2em 0 0 0;
+}
+
+.carddark {
+  min-height: 100%;
+  background: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #444;
+  position: relative;
+  top: 0;
+  transition: all .1s ease-in;
+  border-radius: 30px;
+}
+
+.carddark:hover {
+  top: -2px;
+  box-shadow: 0 4px 5px rgba(0,0,0,0.2);
+}
+
+.carddark article {
+  padding: 20px;
+  display: flex;
+  
+  flex: 1;
+  justify-content: space-between;
+  flex-direction: column;
+  
+}
+.carddark .thumb {
+  padding-bottom: 60%;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.carddark p { 
+  flex: 1;
+  line-height: 1.4;
+}
+
+.carddark span {
+  font-size: 12px;
+  font-weight: bold;
+  color: whitesmoke;
   text-transform: uppercase;
   letter-spacing: .05em;
   margin: 2em 0 0 0;
@@ -1033,7 +1081,7 @@ h1 {
 /* Footer Section
 ---------------------------------*/
 footer {
-  background: #FFBE00;
+  background: black;
   color: #f7fff7;
   margin-top: 3%;
   padding-top: 3%;
@@ -1049,7 +1097,7 @@ footer h2 {
   margin-left: 10%;
   font-size: 300%;
   text-decoration-line: underline;
-  text-decoration-color:  #369FFF;
+  text-decoration-color:  #38495a;
 }
 footer p{
   position: relative;
@@ -1068,7 +1116,7 @@ footer a {
   text-align: center;
   padding: 3% 20%;
   text-decoration: none;
-  background-color: #7530FF;
+  background-color: #657c7b;
   border-radius: 30px;
   font-size: 150%;
 }
