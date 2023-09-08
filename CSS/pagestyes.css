@@ -3,7 +3,6 @@ Color Pallete:
 GreyGreen = #333d33
 LightGreyGreen = #657c7b
 BlueGrey = #38495a
-Mahogany = #4e0f22
 
 
 */
@@ -109,14 +108,14 @@ a, p {
 .base {
   position: absolute;
   filter: blur(60px);
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .one {
   border-radius: 100%;
   width: 100%;
   height: 600px;
-  background-color: #4e0f22;
+  background-color: #38495a;
   left: -50px;
   top: -300px;
   z-index: 3;
@@ -125,7 +124,7 @@ a, p {
 .two {
   width: 100%;
   height: 800px;
-  background-color: #657c7b;
+  background-color: #369FFF;
   bottom: -30px;
   left: -80px;
 }
@@ -133,10 +132,10 @@ a, p {
 .three {
   border-radius: 100%;
   width: 100%;
-  height: 500px;
+  height: 450px;
   bottom: -80px;
-  right: -180px;
-  background-color: #4e0f22;
+  right: -100px;
+  background-color: #FFBE00;
 }
 
 @media (min-width: 700px) and (max-width: 945px){
@@ -474,7 +473,7 @@ h1 {
 /* Description Section (ONE)
 ---------------------------------*/
 .descriptionbox {
-  background-color: #657c7b;
+  background-color: #7530FF;
   position: relative;
   display: inline-block;
   width: 90%;
@@ -489,7 +488,7 @@ h1 {
   position: relative;
   font-size: 300%;
   text-decoration-line: underline;
-  text-decoration-color:  #38495a;
+  text-decoration-color:  #369FFF;
 }
 .descriptionbox .text {
   text-align: center;
@@ -620,7 +619,7 @@ h1 {
 /* Description Section (TWO)
 ---------------------------------*/
 .descriptionboxTwo {
-  background-color: #38495a;
+  background-color: #FFBE00;
   position: relative;
   display: inline-block;
   width: 90%;
@@ -635,7 +634,7 @@ h1 {
   position: relative;
   font-size: 300%;
   text-decoration-line: underline;
-  text-decoration-color:  #657c7b;
+  text-decoration-color:  #369FFF;
 }
 .descriptionboxTwo .text {
   text-align: center;
@@ -766,7 +765,7 @@ h1 {
 /* Description Section (THREE)
 ---------------------------------*/
 .descriptionboxThree {
-  background-color: #4e0f22;
+  background-color: #369FFF;
   position: relative;
   display: inline-block;
   width: 90%;
@@ -781,7 +780,7 @@ h1 {
   position: relative;
   font-size: 300%;
   text-decoration-line: underline;
-  text-decoration-color:  #333d33;
+  text-decoration-color:  #FFBE00;
 }
 .descriptionboxThree .text {
   text-align: center;
@@ -811,7 +810,7 @@ h1 {
   text-align: left;
 }
 .descriptionboxThree mark{
-  background-color: black;
+  background-color: #FFBE00;
   color: white;
 }
 
@@ -934,7 +933,7 @@ h1 {
 /* Screenshot Section
 ---------------------------------*/
 .screenshotbox {
-  background-color: #4e0f22;
+  background-color: #7530FF;
   position: relative;
   display: inline-block;
   width: 90%;
@@ -947,7 +946,7 @@ h1 {
   margin-left: 10%;
   font-size: 300%;
   text-decoration-line: underline;
-  text-decoration-color:  #333d33;
+  text-decoration-color:  #369FFF;
   color: white;
 }
 .screenshotbox p {
@@ -996,7 +995,7 @@ h1 {
   margin-left: 10%;
   font-size: 300%;
   text-decoration-line: underline;
-  text-decoration-color:  #657c7b;
+  text-decoration-color:  #369FFF;
 }
 .screenshotboxTwo p {
   position: relative;
@@ -1056,11 +1055,11 @@ h1 {
 }
 
 .screens>div:nth-child(even){
-  background-color: #657c7b;
+  background-color: #FFBE00;
 }
 
 .screens>div:nth-child(odd){
-  background-color: #38495a;
+  background-color: #369FFF;
 }
 
 @media (min-width: 768px) and (max-width: 1024px){
